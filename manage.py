@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import os
 import sys
+from dotenv import load_dotenv
+
+load_dotenv(verbose=True)
 
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bubblebreakerApi.settings')
